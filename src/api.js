@@ -1,7 +1,7 @@
 // api.js
 import axios from 'axios';
 
-const apiUrl = '/proxy';
+const apiUrl = '/api/proxy';
 
 export const obtenerDatos = async (parametros) => {
   try {
