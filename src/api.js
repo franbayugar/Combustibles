@@ -1,7 +1,7 @@
 // api.js
 import axios from 'axios';
 
-const apiUrl = 'http://datos.energia.gob.ar/api/3/action/datastore_search';
+const apiUrl = 'https://datos.energia.gob.ar/api/3/action/datastore_search';
 
 export const obtenerDatos = async (parametros) => {
   try {
