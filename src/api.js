@@ -1,6 +1,6 @@
 // api.js
 
-const apiUrl = 'https://datos.energia.gob.ar/api/3/action/datastore_search?resource_id=80ac25de-a44a-4445-9215-090cf55cfda5&filters={"localidad":"TRES ARROYOS"}';
+const apiUrl = 'http://datos.energia.gob.ar/api/3/action/datastore_search?resource_id=80ac25de-a44a-4445-9215-090cf55cfda5&filters={"localidad":"TRES ARROYOS"}';
 
 export const obtenerDatos = async (req, res) => {
     try {
