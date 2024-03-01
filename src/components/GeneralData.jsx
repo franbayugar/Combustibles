@@ -11,8 +11,7 @@ const MiComponente = () => {
         const fetchData = async () => {
             try {
                 const parametros = {
-                    resource_id: '80ac25de-a44a-4445-9215-090cf55cfda5',
-                    filters: '{"localidad":"TRES ARROYOS"}'
+
                 };
                 const datosObtenidos = await obtenerDatos(parametros);
 
@@ -57,7 +56,7 @@ const MiComponente = () => {
     }, []);
 
     return (
-        <div class="divContenedor">
+        <div>
             {/* Aquí puedes usar datosAgrupados */}
             {Object.keys(datos).map((key) => {
                 const dato = datos[key][0]; // Obtener el primer elemento de cada array
