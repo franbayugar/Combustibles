@@ -1,11 +1,11 @@
 // api.js
 import axios from 'axios';
 
-const apiUrl = 'https://datos.energia.gob.ar/api/3/action/datastore_search';
+const apiUrl = '/proxy';
 
 export const obtenerDatos = async (parametros) => {
   try {
-    const response = await axios.get(`${apiUrl}`, { params: parametros });
+    const response = await axios.get(`${apiUrl}`);
     return response.data;
   } catch (error) {
     console.error('Error al obtener datos:', error);
